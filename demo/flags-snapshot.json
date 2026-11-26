@@ -1,0 +1,56 @@
+{
+  "project_name": "pet-shop (offline demo)",
+  "stale_days": 30,
+  "flags": [
+    {
+      "id": 1, "name": "new_checkout", "last_modified": "2026-06-02T10:00:00Z",
+      "states": [
+        {"environment": "Development", "enabled": true, "value": null},
+        {"environment": "Production", "enabled": true, "value": null}
+      ]
+    },
+    {
+      "id": 2, "name": "holiday_banner_2024", "last_modified": "2025-01-06T09:00:00Z",
+      "states": [
+        {"environment": "Development", "enabled": false, "value": null},
+        {"environment": "Production", "enabled": false, "value": null}
+      ]
+    },
+    {
+      "id": 3, "name": "dark_mode", "last_modified": "2026-11-20T12:00:00Z",
+      "states": [
+        {"environment": "Development", "enabled": true, "value": null},
+        {"environment": "Production", "enabled": false, "value": null}
+      ]
+    },
+    {
+      "id": 4, "name": "pricing_experiment", "last_modified": "2026-03-01T12:00:00Z", "multivariate": true,
+      "states": [
+        {"environment": "Development", "enabled": true, "value": "control"},
+        {"environment": "Production", "enabled": true, "value": "control"}
+      ]
+    },
+    {
+      "id": 6, "name": "hero_cta_text", "last_modified": "2026-11-25T17:30:55Z", "multivariate": true,
+      "states": [
+        {"environment": "Development", "enabled": true, "value": "control"}
+      ],
+      "experiments": [
+        {
+          "id": 486, "name": "Hero button text", "environment": "Development", "status": "completed",
+          "hypothesis": "Changing the hero button from 'Visit Our Store' to 'Plan Your Visit' will increase clicks on Get Directions.",
+          "ended_at": "2026-11-25T17:30:55Z", "rollout_decision": "variant", "rollout_variant": 36864,
+          "feature": {"id": 6, "name": "hero_cta_text", "initial_value": "control",
+                      "multivariate_options": [{"id": 36864, "string_value": "plan_visit", "key": "plan_visit"}]}
+        }
+      ]
+    },
+    {
+      "id": 5, "name": "legacy_search", "last_modified": "2025-08-15T12:00:00Z",
+      "states": [
+        {"environment": "Development", "enabled": false, "value": null},
+        {"environment": "Production", "enabled": false, "value": null}
+      ]
+    }
+  ]
+}
