@@ -30,7 +30,8 @@ from .flagsmith_api import CliFlagsmithClient, FlagsmithClient, FlagsmithError, 
 from .scanner import scan
 from .syntax_check import check_syntax
 
-console = Console()
+# When colors are forced (FORCE_COLOR, e.g. recording the demo through a pipe) emit ANSI codes even on Windows.
+console = Console(legacy_windows=False if os.environ.get("FORCE_COLOR") else None)
 
 COLORS = {
     Verdict.EXPERIMENT_DONE: "bold blue",

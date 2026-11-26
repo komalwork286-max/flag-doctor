@@ -4,6 +4,17 @@
 
 Built for **Toggle Wars: The Flagsmith Experimentation Hackathon** (WeMakeDevs × Flagsmith), **Track 02: AI Agents and Feature Flags**.
 
+## 🎬 Demo video
+
+**[▶ Watch the demo (docs/demo.mp4, 78 s)](docs/demo.mp4)**
+
+A real run, not a mock-up:
+1. `flagdoctor scan` asks **Flagsmith Cloud** (through the Flagsmith CLI) about the PawNest pet-store project and finds the finished A/B test `hero_cta_text`, won by `plan_visit`.
+2. `flagdoctor fix` has **Gemini** remove the losing variant. The presenter approves `js/main.js` and rejects the change to the traffic simulator.
+3. Flag Doctor commits the cleanup on its own branch.
+
+The video was made with [`docs/record_demo.py`](docs/record_demo.py). It runs the commands for real and records every output byte with its real timing; the raw capture is in [`docs/demo-recording.json`](docs/demo-recording.json). Only the typing and the pauses before answering are simulated, and AI waits longer than 4 s are shortened.
+
 ---
 
 ## The problem
