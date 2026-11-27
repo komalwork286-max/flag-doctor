@@ -6,7 +6,9 @@ Built for **Toggle Wars: The Flagsmith Experimentation Hackathon** (WeMakeDevs �
 
 ## 🎬 Demo video
 
-**[▶ Watch the demo (docs/demo.mp4, 78 s)](docs/demo.mp4)**
+![Flag Doctor demo: scan Flagsmith, AI removes the losing A/B test variant, human approves, git commit](docs/demo.gif)
+
+*Plays automatically (78 s loop). To pause and read the diffs, download the [MP4 version](docs/demo.mp4).*
 
 A real run, not a mock-up:
 1. `flagdoctor scan` asks **Flagsmith Cloud** (through the Flagsmith CLI) about the PawNest pet-store project and finds the finished A/B test `hero_cta_text`, won by `plan_visit`.
